@@ -1,0 +1,4 @@
+BEGIN TRANSACTION; /*Same as BEGIN */
+
+
+END TRANSACTION; /* Same as COMMIT */
