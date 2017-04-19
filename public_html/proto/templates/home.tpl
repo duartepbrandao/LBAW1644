@@ -25,7 +25,7 @@
                         </li>-->
                         <li><a href="{$BASE_URL}pages/user/login.php">Login</a>
                         </li>
-                        <li><a href="{$BASE_URL}pages/user/register.php">Registo</a>
+                        <li><a href="{$BASE_URL}pages/user/register.php">Register</a>
                         </li>
                     </ul>
                 </div>
