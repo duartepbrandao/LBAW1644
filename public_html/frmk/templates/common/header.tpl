@@ -11,13 +11,13 @@
         <title>FEUP Inventory Management</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/sb-admin.css">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="{$BASE_URL}css/bootstrap.min.css">
+        <link rel="stylesheet" href="{$BASE_URL}css/sb-admin.css">
+        <link rel="stylesheet" href="{$BASE_URL}css/custom.css">
         <link rel="stylesheet" href="dataTables/jquery.dataTables.min.css">
-
+		
         <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="{$BASE_URL}css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
