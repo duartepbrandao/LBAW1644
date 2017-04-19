@@ -43,7 +43,7 @@
                             <hr class="divider">
 
                              <div class="col-lg-2">
-                                <a href="item.html">
+                                <a href="{$BASE_URL}pages/inventory/model.php">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>
                                 <div class="caption">
@@ -60,7 +60,7 @@
                             <hr class="divider">
 
                             <div class="col-lg-2">
-                                <a href="item.html">
+                                <a href="{$BASE_URL}pages/inventory/model.php">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>
                                 <div class="caption">

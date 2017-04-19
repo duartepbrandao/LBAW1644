@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 19:22:01
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:41:59
          compiled from "/var/www/LBAW1644/public_html/proto/templates/user/view_profile.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:172828652258f79cb9336141-05678898%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '62efec1b853079487be2df150fd7b822b56f8162' => 
     array (
       0 => '/var/www/LBAW1644/public_html/proto/templates/user/view_profile.tpl',
-      1 => 1492617182,
+      1 => 1492627214,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.15',
   'unifunc' => 'content_58f79cb933ca64_69667298',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58f79cb933ca64_69667298')) {function content_58f79cb933ca64_69667298($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
@@ -66,7 +70,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <hr class="divider">
 
                              <div class="col-lg-2">
-                                <a href="item.html">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>
                                 <div class="caption">
@@ -83,7 +88,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <hr class="divider">
 
                             <div class="col-lg-2">
-                                <a href="item.html">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>
                                 <div class="caption">

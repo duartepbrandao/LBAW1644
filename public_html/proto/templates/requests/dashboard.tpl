@@ -39,7 +39,7 @@
                                     <tbody>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -47,7 +47,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -55,7 +55,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -63,7 +63,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -71,7 +71,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -79,7 +79,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -87,7 +87,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -95,7 +95,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -119,7 +119,7 @@
                                     <tbody>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -127,7 +127,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -135,7 +135,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -143,7 +143,7 @@
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17

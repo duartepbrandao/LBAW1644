@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:16:23
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:33:05
          compiled from "/var/www/LBAW1644/public_html/proto/templates/requests/dashboard.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:187845220558f7a977661827-70694323%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '38d71f322dd5c1cab08304a63948e20e0c2b32fe' => 
     array (
       0 => '/var/www/LBAW1644/public_html/proto/templates/requests/dashboard.tpl',
-      1 => 1492619661,
+      1 => 1492626784,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.15',
   'unifunc' => 'content_58f7a9776669e8_32890876',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58f7a9776669e8_32890876')) {function content_58f7a9776669e8_32890876($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
@@ -62,7 +66,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     <tbody>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -70,7 +75,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -78,7 +84,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -86,7 +93,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -94,7 +102,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -102,7 +111,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -110,7 +120,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -118,7 +129,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 9/10/17
@@ -142,7 +154,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     <tbody>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -150,7 +163,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -158,7 +172,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17
@@ -166,7 +181,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         </tr>
                                         <tr>
                                             <td >
-                                                <a href="item.html">Item #1</a>
+                                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/model.php">Item #1</a>
                                             </td>
                                             <td >
                                                 22/10/17

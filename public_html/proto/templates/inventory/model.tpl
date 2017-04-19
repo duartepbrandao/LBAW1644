@@ -29,7 +29,7 @@
                         <div class="col-lg-1">
                         </div>
                         <div class="col-lg-4">
-                            <img src="item1.jpg" class="img-responsive img-thumbnail" alt="Nikon">
+                            <img src="{$BASE_URL}images/item1.jpg" class="img-responsive img-thumbnail" alt="Nikon">
                         </div>
                         <div class="col-lg-6">
                             <div class="panel panel-default">
