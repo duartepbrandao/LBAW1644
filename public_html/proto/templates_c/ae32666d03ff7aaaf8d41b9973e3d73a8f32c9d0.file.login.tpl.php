@@ -1,4 +1,30 @@
-{include file='common/header.tpl'}
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 18:58:37
+         compiled from "/var/www/LBAW1644/public_html/proto/templates/user/login.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:11605716158f7973d7615c7-18775398%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'ae32666d03ff7aaaf8d41b9973e3d73a8f32c9d0' => 
+    array (
+      0 => '/var/www/LBAW1644/public_html/proto/templates/user/login.tpl',
+      1 => 1492621098,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '11605716158f7973d7615c7-18775398',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_58f7973d76ac90_34704896',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f7973d76ac90_34704896')) {function content_58f7973d76ac90_34704896($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 
         <!-- Body Content -->
         <div id="wrapper">
@@ -41,8 +67,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-				
-                    <form action="{$BASE_URL}actions/users/login.php" method="post">
+
+                    <form action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/users/login.php" method="post">
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" class="form-control" placeholder="example@domain" name="email">
@@ -60,7 +87,8 @@
         </div>
         <!-- /#wrapper -->
 
-        {include file='common/scripts.tpl'}
+        <?php echo $_smarty_tpl->getSubTemplate ('common/scripts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 
         <!-- Custom Scripts -->
         <script>
@@ -69,4 +97,5 @@
             });
         </script>
 
-{include file='common/footer.tpl'}
+<?php echo $_smarty_tpl->getSubTemplate ('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php }} ?>
