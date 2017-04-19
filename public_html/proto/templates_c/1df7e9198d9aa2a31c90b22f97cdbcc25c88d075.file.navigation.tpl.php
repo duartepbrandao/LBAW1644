@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 18:47:44
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:29:14
          compiled from "/var/www/LBAW1644/public_html/proto/templates/common/navigation.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:178590657358f794b04b94e9-92095297%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1df7e9198d9aa2a31c90b22f97cdbcc25c88d075' => 
     array (
       0 => '/var/www/LBAW1644/public_html/proto/templates/common/navigation.tpl',
-      1 => 1492617182,
+      1 => 1492626551,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.15',
   'unifunc' => 'content_58f794b04b9fd2_89010120',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58f794b04b9fd2_89010120')) {function content_58f794b04b9fd2_89010120($_smarty_tpl) {?>        <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id ="navbar" role="navigation">
@@ -29,7 +33,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.html">FEUP INVENTORY MANAGEMENT</a>
+                <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/requests/dashboard.php">FEUP INVENTORY MANAGEMENT</a>
             </div>
 
             <!-- Top Menu Items -->
@@ -78,25 +83,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" id="sidebar">
                     <li>
-                        <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/requests/dashboard.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
                     </li>
                     <li >
-                        <a href="pesquisa.html"><i class="fa fa-fw fa-file"></i> Catálogo </a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
                     <li >
-                        <a href="operador.html"><i class="fa fa-fw fa-file"></i> Operador </a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
                     </li>
                     <li >
-                        <a href="gestor.html"><i class="fa fa-fw fa-file"></i> Gestor </a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/requests/pending-requests.php"><i class="fa fa-fw fa-file"></i> Gestor </a>
                     </li>
                     <li class="active">
-                        <a href="admin.html" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse in">
                             <li>
-                                <a href="categorias.html">Categorias</a>
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/admin/categories.php">Categorias</a>
                             </li>
                             <li>
-                                <a href="listaUtilizadores.html">Utilizadores</a>
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/admin/users.php">Utilizadores</a>
                             </li>
                         </ul>
                     </li>

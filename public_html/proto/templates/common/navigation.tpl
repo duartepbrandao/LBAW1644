@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.html">FEUP INVENTORY MANAGEMENT</a>
+                <a class="navbar-brand" href="{$BASE_URL}pages/requests/dashboard.php">FEUP INVENTORY MANAGEMENT</a>
             </div>
 
             <!-- Top Menu Items -->
@@ -57,25 +57,25 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" id="sidebar">
                     <li>
-                        <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                        <a href="{$BASE_URL}pages/requests/dashboard.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
                     </li>
                     <li >
-                        <a href="pesquisa.html"><i class="fa fa-fw fa-file"></i> Catálogo </a>
+                        <a href="{$BASE_URL}pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
                     <li >
-                        <a href="operador.html"><i class="fa fa-fw fa-file"></i> Operador </a>
+                        <a href="{$BASE_URL}pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
                     </li>
                     <li >
-                        <a href="gestor.html"><i class="fa fa-fw fa-file"></i> Gestor </a>
+                        <a href="{$BASE_URL}pages/requests/pending-requests.php"><i class="fa fa-fw fa-file"></i> Gestor </a>
                     </li>
                     <li class="active">
-                        <a href="admin.html" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="{$BASE_URL}pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse in">
                             <li>
-                                <a href="categorias.html">Categorias</a>
+                                <a href="{$BASE_URL}pages/admin/categories.php">Categorias</a>
                             </li>
                             <li>
-                                <a href="listaUtilizadores.html">Utilizadores</a>
+                                <a href="{$BASE_URL}pages/admin/users.php">Utilizadores</a>
                             </li>
                         </ul>
                     </li>
