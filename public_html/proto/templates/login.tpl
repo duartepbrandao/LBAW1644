@@ -41,14 +41,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form role="form">
+				
+                    <form action="{$BASE_URL}actions/users/login.php" method="post">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="example@domain">
+                            <input type="email" class="form-control" placeholder="example@domain" name="email">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" name="password">
                         </div>
                         <button type="submit" class="btn btn-default">Login</button>
                     </form>

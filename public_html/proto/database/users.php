@@ -2,16 +2,16 @@
   
   function createUser($realname, $username, $password) {
     global $conn;
-    $stmt = $conn->prepare("INSERT INTO users VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO utilizador VALUES (?, ?, ?)");
     $stmt->execute(array($username, $realname, sha1($password)));
   }
 
-  function isLoginCorrect($username, $password) {
+  function isLoginCorrect($email, $password) {
     global $conn;
     $stmt = $conn->prepare("SELECT * 
-                            FROM users 
-                            WHERE username = ? AND password = ?");
-    $stmt->execute(array($username, sha1($password)));
+                            FROM utilizador 
+                            WHERE email = ? AND password = ?");
+    $stmt->execute(array($email, sha1($password)));
     return $stmt->fetch() == true;
   }
 ?>
