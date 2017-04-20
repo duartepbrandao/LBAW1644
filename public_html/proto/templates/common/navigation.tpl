@@ -56,25 +56,25 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" id="sidebar">
-                    <li>
+                    <li {if $page eq "dashboard"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/dashboard.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
                     </li>
-                    <li >
+                    <li {if $page eq "models"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
-                    <li >
+                    <li {if $page eq "movements"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
                     </li>
-                    <li >
+                    <li {if $page eq "pending-requests"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/pending-requests.php"><i class="fa fa-fw fa-file"></i> Gestor </a>
                     </li>
-                    <li class="active">
+                    <li {if $page eq "new-users"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse in">
-                            <li>
+                            <li {if $page eq "categories"} class="active" {/if}>
                                 <a href="{$BASE_URL}pages/admin/categories.php">Categorias</a>
                             </li>
-                            <li>
+                            <li {if $page eq "users"} class="active" {/if}>
                                 <a href="{$BASE_URL}pages/admin/users.php">Utilizadores</a>
                             </li>
                         </ul>

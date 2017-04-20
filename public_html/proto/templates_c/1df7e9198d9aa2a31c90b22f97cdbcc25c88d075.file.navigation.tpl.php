@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:29:14
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-20 11:35:02
          compiled from "/var/www/LBAW1644/public_html/proto/templates/common/navigation.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:178590657358f794b04b94e9-92095297%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1df7e9198d9aa2a31c90b22f97cdbcc25c88d075' => 
     array (
       0 => '/var/www/LBAW1644/public_html/proto/templates/common/navigation.tpl',
-      1 => 1492626551,
+      1 => 1492680899,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'BASE_URL' => 0,
+    'page' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -82,31 +83,31 @@ pages/requests/dashboard.php">FEUP INVENTORY MANAGEMENT</a>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" id="sidebar">
-                    <li>
+                    <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="dashboard") {?> class="active" <?php }?>>
                         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/requests/dashboard.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
                     </li>
-                    <li >
+                    <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="models") {?> class="active" <?php }?>>
                         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
-                    <li >
+                    <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="movements") {?> class="active" <?php }?>>
                         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
                     </li>
-                    <li >
+                    <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="pending-requests") {?> class="active" <?php }?>>
                         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/requests/pending-requests.php"><i class="fa fa-fw fa-file"></i> Gestor </a>
                     </li>
-                    <li class="active">
+                    <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="new-users") {?> class="active" <?php }?>>
                         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse in">
-                            <li>
+                            <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="categories") {?> class="active" <?php }?>>
                                 <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/admin/categories.php">Categorias</a>
                             </li>
-                            <li>
+                            <li <?php if ($_smarty_tpl->tpl_vars['page']->value=="users") {?> class="active" <?php }?>>
                                 <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/admin/users.php">Utilizadores</a>
                             </li>
