@@ -22,3 +22,7 @@ body {
 #notifications, #profilebar {
 	background-color:#8c2c19;
 }
+
+.dropdown>ul>li>a:hover{
+	background-color:black;
+}
