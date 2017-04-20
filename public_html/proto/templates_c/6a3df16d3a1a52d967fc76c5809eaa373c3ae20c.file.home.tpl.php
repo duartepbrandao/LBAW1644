@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 20:38:47
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-20 09:42:22
          compiled from "/var/www/LBAW1644/public_html/proto/templates/home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:84195128358f7ae06efd394-94558050%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6a3df16d3a1a52d967fc76c5809eaa373c3ae20c' => 
     array (
       0 => '/var/www/LBAW1644/public_html/proto/templates/home.tpl',
-      1 => 1492627120,
+      1 => 1492627664,
       2 => 'file',
     ),
   ),
@@ -55,7 +55,7 @@ pages/home.php">Home</a>
 pages/user/login.php">Login</a>
                         </li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-pages/user/register.php">Registo</a>
+pages/user/register.php">Register</a>
                         </li>
                     </ul>
                 </div>

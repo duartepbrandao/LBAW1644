@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="{$BASE_URL}css/bootstrap.min.css">
         <link rel="stylesheet" href="{$BASE_URL}css/sb-admin.css">
         <link rel="stylesheet" href="{$BASE_URL}css/custom.css">
-        <link rel="stylesheet" href="dataTables/jquery.dataTables.min.css">
-		
+        <link rel="stylesheet" href="{$BASE_URL}css/jquery.dataTables.min.css">
+
         <!-- Custom Fonts -->
         <link href="{$BASE_URL}css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
