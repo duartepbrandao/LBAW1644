@@ -16,13 +16,12 @@ background-color: #8c2c19;
 body {
 	background-color: white;
 }
-
-	
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background-color:black !important;
+}	
 
 #notifications, #profilebar {
 	background-color:#8c2c19;
 }
 
-.dropdown>ul>li>a:hover{
-	background-color:black;
-}
+

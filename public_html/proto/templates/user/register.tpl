@@ -41,26 +41,26 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form role="form">
+                    <form action="{$BASE_URL}actions/users/register.php" method="post" role="form">
                         <div class="form-group">
                             <label>Nome</label>
-                            <input type="text" class="form-control" placeholder="">
+                            <input type="text" class="form-control" placeholder="" name="real_name">
                         </div>
                         <div class="form-group">
                             <label>Codigo/Numero Universitario</label>
-                            <input type="number" class="form-control" placeholder="Ex: 201603192">
+                            <input type="number" class="form-control" placeholder="Ex: 201603192" name="user_number>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="example@domain">
+                            <input type="email" class="form-control" placeholder="example@domain" name="email">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" name="password">
                         </div>
                         <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" name="confirm_password">
                         </div>
                         <button type="submit" class="btn btn-default">Submeter</button>
                     </form>

@@ -1,3 +1,3 @@
 <?php
-    header('Location: pages/requests/dashboard.php');
+    header('Location: pages/home.php');
 ?>

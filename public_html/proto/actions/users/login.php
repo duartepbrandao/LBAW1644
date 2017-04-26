@@ -13,9 +13,9 @@
   $password = $_POST['password'];
 
   if (isLoginCorrect($email, $password)) {
-    $_SESSION['email'] = $email;
+	$_SESSION['username'] = $email;
     $_SESSION['success_messages'][] = 'Login successful';
-  header('Location: ' . $BASE_URL . 'pages/dashboard.php');
+  header('Location: ' . $BASE_URL . 'pages/requests/dashboard.php');
   } else {
     $_SESSION['error_messages'][] = 'Login failed';
   header('Location: ' . $_SERVER['HTTP_REFERER']);
