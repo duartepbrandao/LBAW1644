@@ -45,11 +45,7 @@
                         <div class="form-group">
                             <label>Nome</label>
                             <input type="text" class="form-control" placeholder="" name="real_name">
-                        </div>
-                        <div class="form-group">
-                            <label>Codigo/Numero Universitario</label>
-                            <input type="number" class="form-control" placeholder="Ex: 201603192" name="user_number>
-                        </div>
+                        </div>                        
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" class="form-control" placeholder="example@domain" name="email">
