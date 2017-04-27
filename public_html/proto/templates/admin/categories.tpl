@@ -33,62 +33,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+								
+								 {foreach $categories as $categorie}
+								
                                     <tr>
-                                        <td>Material Informático</td>
+                                        <td>{$categorie.nome_categoria}</td>
                                         <td></td>
                                         <td>
                                             <button type="button" class="btn btn-primary">Adicionar Gestor</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>Equipamento Vídeo</td>
-                                    <td></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Material Didático</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Equipamento Projeção</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cabos</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td></td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Adicionar Gestor</button>
-                                        </td>
-                                    </tr>
+									
+									 {/foreach}
+                                   
 
                                 </tbody>
                             </table>
