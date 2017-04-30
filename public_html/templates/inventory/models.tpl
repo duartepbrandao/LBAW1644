@@ -45,7 +45,7 @@
                             <hr class="divider">
 							{foreach $modelsList as $model}
 							 <div class="col-lg-2">
-                                <a href="page/?id={$model.id}">
+                                <a href="{$BASE_URL}/pages/inventory/model.php?id={$model.id_modelo}">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>
                                 <div class="caption">
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
 							{/foreach}
-						</div>	
+						</div>
                     </div>
                 </div>
             </div>

@@ -11,8 +11,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 class="page-header">
-                                Camara Nikon D3300
-                                <small>Equipamento Vídeo</small>
+                                {$model.nome}
+                                <small>categoria . nome</small>
                             </h1>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <p>
-                                        <b>Quantidade disponível:</b> 3
+                                        <b>Quantidade disponível:</b> {$model.quantidade}
                                     </p>
                                     <br>
                                     <p>
@@ -44,7 +44,7 @@
                                         </b>
                                     </p>
                                     <p>
-                                        Maquina fotografica Nikon D330
+                                        {$model.nome}
                                     </p>
                                     <p>
                                         <ul>

@@ -9,8 +9,17 @@
    modelo.id_modelo,
    categoria.nome_categoria
    FROM (modelo
-   JOIN categoria ON (modelo.id_categoria = categoria.id_categoria));");
+   JOIN categoria ON (modelo.id_categoria = categoria.id_categoria))");
     $stmt->execute();
     return $stmt->fetchAll();
+  }
+  
+  function getModel($modelID) {
+	global $conn;
+    $stmt = $conn->prepare("SELECT * 
+                            FROM modelo 
+                            WHERE id_modelo = ?");
+    $stmt->execute(array($modelID));
+    return $stmt->fetch();
   }
 ?>

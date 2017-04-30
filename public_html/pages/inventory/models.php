@@ -3,7 +3,6 @@
 	include_once($BASE_DIR .'database/inventory.php');
 	
 	$models = getModels();
-	//var_dump($models);
 	$smarty->assign('modelsList', $models);
 	
     $smarty->assign('page', 'models');
