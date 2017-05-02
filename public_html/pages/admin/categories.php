@@ -8,6 +8,10 @@ if($_SESSION['username'] == NULL){
     exit;
 }
 
+if($_SESSION['role']<3){
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    exit;
+}
 $categories = getCategories();
 $smarty->assign('categories', $categories);
 
