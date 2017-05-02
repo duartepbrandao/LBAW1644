@@ -56,12 +56,14 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" id="sidebar">
+                    {if $ROLE = 0}
                     <li {if $page eq "dashboard"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/dashboard.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
                     </li>
                     <li {if $page eq "models"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
+                    {/if}
                     {if $ROLE > 0}
                     <li {if $page eq "movements"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
