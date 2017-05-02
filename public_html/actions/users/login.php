@@ -12,12 +12,16 @@
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  if (isLoginCorrect($email, $password)) {
-	$_SESSION['username'] = $email;
+  $userData=login($email, $password);
+
+  if ($userData) {
+	$_SESSION['ID']=$userData['id_utilizador'];
+	$_SESSION['username'] = $userData['nome'];
+	$_SESSION['role'] = getUserRole($userData['id_utilizador']);
     $_SESSION['success_messages'][] = 'Login successful';
-  header('Location: ' . $BASE_URL . 'pages/requests/dashboard.php');
+    header('Location: ' . $BASE_URL . 'pages/requests/dashboard.php');
   } else {
     $_SESSION['error_messages'][] = 'Login failed';
-  header('Location: ' . $_SERVER['HTTP_REFERER']);
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
   }
 ?>

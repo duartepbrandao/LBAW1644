@@ -1,17 +1,48 @@
 <?php
-  
-  function createUser($realname, $email, $password) {
+
+function createUser($realname, $email, $password)
+{
     global $conn;
     $stmt = $conn->prepare("INSERT INTO utilizador (nome,email,password) VALUES (?, ?, ?)");
     $stmt->execute(array($realname, $email, sha1($password)));
-  }
+}
 
-  function isLoginCorrect($email, $password) {
+function login($email, $password)
+{
     global $conn;
     $stmt = $conn->prepare("SELECT * 
                             FROM utilizador 
                             WHERE email = ? AND password = ?");
     $stmt->execute(array($email, sha1($password)));
-    return $stmt->fetch() == true;
-  }
+
+    return $stmt->fetch();
+}
+
+
+function getUserRole($userID)
+{
+    $role = 0;
+    global $conn;
+    $stmt = $conn->prepare("SELECT * 
+                            FROM operador 
+                            WHERE id_utilizador = ?");
+    $stmt->execute(array($userID));
+    if ($stmt->fetch() == true) {
+        $role++;
+        $stmt = $conn->prepare("SELECT * FROM gestor WHERE id_utilizador =?");
+        $stmt->execute(array($userID));
+
+        if ($stmt->fetch() == true) {
+            $role++;
+            $stmt = $conn->prepare("SELECT * FROM administrador WHERE id_utilizador =?");
+            $stmt->execute(array($userID));
+
+            if ($stmt->fetch() == true) {
+                $role++;
+            }
+        }
+    }
+    return $role;
+    }
+
 ?>

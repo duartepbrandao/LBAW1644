@@ -4,3 +4,7 @@ html/debug\.log
 /public_html/proto/config/init.php
 
 public_html/lbaw1644-proto\.zip
+
+\.idea/
+
+public_html/config/init_sample\.php

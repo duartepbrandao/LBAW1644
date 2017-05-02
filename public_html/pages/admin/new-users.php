@@ -5,6 +5,7 @@
 	$newUsers = getNewUsers();		
 	$smarty->assign('newUsers', $newUsers);
 	
+	
     $smarty->assign('page', 'new-users');
     $smarty->display('admin/new-users.tpl');
 ?>

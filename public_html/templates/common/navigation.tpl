@@ -62,12 +62,19 @@
                     <li {if $page eq "models"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/inventory/models.php"><i class="fa fa-fw fa-file"></i> Catálogo </a>
                     </li>
+                    {if $ROLE > 0}
                     <li {if $page eq "movements"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/movements.php"><i class="fa fa-fw fa-file"></i> Operador </a>
                     </li>
+                    {/if}
+
+                    {if $ROLE > 1}
                     <li {if $page eq "pending-requests"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/requests/pending-requests.php"><i class="fa fa-fw fa-file"></i> Gestor </a>
                     </li>
+                    {/if}
+
+                    {if $ROLE > 2}
                     <li {if $page eq "new-users"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse in">
@@ -79,6 +86,7 @@
                             </li>
                         </ul>
                     </li>
+                    {/if}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
