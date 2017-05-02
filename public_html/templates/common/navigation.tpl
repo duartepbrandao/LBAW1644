@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>{$USERNAME}<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {$USERNAME} <b class="caret"></b></a>
                     <ul id="profilebar" class="dropdown-menu">
                         <li>
                             <a href="{$BASE_URL}pages/user/profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
