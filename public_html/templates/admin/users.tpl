@@ -32,142 +32,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                                {foreach $users as $user}
                                     <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
+                                        <td>{$user.nome}</td>
+                                        <td>{$user.email}</td>
                                         <td>Utilizador</td>
                                         <td>
                                             <button type="button" class="btn btn-danger">Banir</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Gestor</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Operador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Operador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Gestor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                    <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Operador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Operador</td>
-                                        <td>
-                                        <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>Utilizador</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">Banir</button>
-                                        </td>
-                                    </tr>
+                                {/foreach}
+
                                 </tbody>
                             </table>
                         </div>

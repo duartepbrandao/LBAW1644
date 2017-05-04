@@ -18,4 +18,11 @@
     return $stmt->fetchAll();
   }
 
+  function getUsers(){
+      global $conn;
+      $stmt = $conn->prepare("SELECT * FROM utilizador;");
+      $stmt->execute();
+      return $stmt->fetchAll();
+  }
+
 ?>
