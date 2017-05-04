@@ -7,6 +7,11 @@
         exit;
 }
 
+
+    $requests = getRequestsByID($_SESSION['ID']);
+    $reservations = getReservedByID($_SESSION['ID']);
+	$smarty->assign('requests',$requests);
+	$smarty->assign('reservations',$reservations);
     $smarty->assign('page', 'dashboard');
     $smarty->display('requests/dashboard.tpl');
 ?>

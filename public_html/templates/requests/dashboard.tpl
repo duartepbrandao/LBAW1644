@@ -37,70 +37,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+
+                                    {foreach $requests as $request}
                                         <tr>
                                             <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php?id={$request.id_modelo}">{$request.nome_modelo}</a>
                                             </td>
                                             <td >
-                                                9/10/17
+                                                {$request.data_fim}
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                9/10/17
-                                            </td>
-                                        </tr>
+                                    {/foreach}
+
                                     </tbody>
                                 </table>
                             </div>
@@ -117,37 +65,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    {foreach $reservations as $reservation}
                                         <tr>
                                             <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php?id={$reservation.id_modelo}">{$reservation.nome}</a>
                                             </td>
                                             <td >
-                                                22/10/17
+                                             {$reservation.data_inicio}
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                22/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                22/10/17
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php">Item #1</a>
-                                            </td>
-                                            <td >
-                                                22/10/17
-                                            </td>
+                                    {/foreach}
+
                                         </tr>
                                     </tbody>
                                 </table>

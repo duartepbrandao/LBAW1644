@@ -21,8 +21,8 @@
      JOIN utilizador ON ((pedido.id_utilizador = utilizador.id_utilizador)))
      JOIN item ON ((pedido.id_item = item.id_item)))
      JOIN modelo ON ((item.id_modelo = modelo.id_modelo)))
-  WHERE ((pedido.data_fim > now()) AND (pedido.estado_pedido <> 'emCurso'::estadopedido));");
-    $stmt->execute();
+  WHERE (pedido.estado_pedido = 'emCurso'::estadopedido OR pedido.estado_pedido = 'atrasado'::estadopedido) AND pedido.id_utilizador = ? ;");
+    $stmt->execute(array($userID));
     return $stmt->fetchAll();
   }
   function getReservedByID($userID) {
@@ -37,8 +37,8 @@
      JOIN utilizador ON ((pedido.id_utilizador = utilizador.id_utilizador)))
      JOIN item ON ((pedido.id_item = item.id_item)))
      JOIN modelo ON ((item.id_modelo = modelo.id_modelo)))
-  WHERE ((pedido.data_inicio > now()) AND (pedido.estado_pedido = 'aceite'::estadopedido));");
-    $stmt->execute();
+  WHERE ((pedido.data_inicio > now()) AND (pedido.estado_pedido = 'aceite'::estadopedido) AND pedido.id_utilizador = ? );");
+    $stmt->execute(array($userID));
     return $stmt->fetchAll();
   }
 ?>

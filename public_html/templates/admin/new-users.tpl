@@ -35,7 +35,7 @@
 								 {foreach $newUsers as $user}
 								  <tr>
                                         <td> <a href="{$BASE_URL}/pages/user/view_profile.php?id={$user.id_utilizador}"</a>
-                                            {$user.nome}{$user.nome}</td>
+                                        {$user.nome}</td>
                                         <td>{$user.email}</td>
                                  
                                         <td>
@@ -43,8 +43,6 @@
                                             <button type="button" class="btn btn-danger">Cancelar</button>
                                         </td>
                                     </tr>
-								 
-								 
   {/foreach}
 								
                                 </tbody>
