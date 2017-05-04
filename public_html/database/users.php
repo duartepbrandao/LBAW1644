@@ -10,7 +10,7 @@ function createUser($realname, $email, $password)
 function login($email, $password)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * 
+    $stmt = $conn->prepare("SELECT id_utilizador, nome,email,foto,estatuto
                             FROM utilizador 
                             WHERE email = ? AND password = ?");
     $stmt->execute(array($email, sha1($password)));
@@ -20,7 +20,7 @@ function login($email, $password)
 
 function getUser($userID){
     global $conn;
-    $stmt = $conn->prepare("SELECT * 
+    $stmt = $conn->prepare("SELECT id_utilizador, nome,email,foto,estatuto
                             FROM utilizador 
                             WHERE id_utilizador = ?");
     $stmt->execute(array($userID));

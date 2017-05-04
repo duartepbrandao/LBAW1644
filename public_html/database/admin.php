@@ -20,7 +20,7 @@
 
   function getUsers(){
       global $conn;
-      $stmt = $conn->prepare("SELECT * FROM utilizador;");
+      $stmt = $conn->prepare("SELECT id_utilizador, nome,email,foto,estatuto FROM utilizador;");
       $stmt->execute();
       return $stmt->fetchAll();
   }
