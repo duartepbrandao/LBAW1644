@@ -7,19 +7,9 @@
 
             <div id="page-wrapper">
                 <div class="container-fluid">
-                    <!-- Page Heading -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">
-                                Página de perfil
-                            </h1>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Perfil de Diogo</h3>
+                            <h1>Perfil de {$user.nome}</h1>
                             <hr class="divider">
 
                             <div class="col-lg-2">

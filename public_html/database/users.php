@@ -18,6 +18,15 @@ function login($email, $password)
     return $stmt->fetch();
 }
 
+function getUser($userID){
+    global $conn;
+    $stmt = $conn->prepare("SELECT * 
+                            FROM utilizador 
+                            WHERE id_utilizador = ?");
+    $stmt->execute(array($userID));
+
+    return $stmt->fetch();
+}
 
 function getUserRole($userID)
 {

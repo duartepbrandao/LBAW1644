@@ -35,7 +35,9 @@
 
                                 {foreach $users as $user}
                                     <tr>
-                                        <td>{$user.nome}</td>
+                                        <td>
+                                            <a href="{$BASE_URL}/pages/user/view_profile.php?id={$user.id_utilizador}"</a>
+                                            {$user.nome}</td>
                                         <td>{$user.email}</td>
                                         <td>Utilizador</td>
                                         <td>
