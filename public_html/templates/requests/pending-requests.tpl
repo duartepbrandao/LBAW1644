@@ -33,159 +33,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>02/01/2017</td>
+
+                                {foreach $pending_requests as $pending}
+                                    <tr data-requestid="{$pending.id_pedido}" >
+                                        <td><a href="{$BASE_URL}pages/inventory/model.php?id={$pending.id_item}">{$pending.nome}</td>
+                                        <td><a href="{$BASE_URL}pages/user/view_profile.php?id={$pending.id_utilizador}">{$pending.utilizador_nome}</td>
+                                        <td>{$pending.data_inicio}</td>
+                                        <td>{$pending.data_fim}</td>
                                         <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
+                                            <button type="button" class="btn btn-success accept-request">Aceitar</button>
+                                            <button type="button" class="btn btn-danger reject-request">Rejeitar</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>04/01/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>08/01/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>26/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>26/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>14/08/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>24/11/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>03/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>12/01/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>23/02/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>05/06/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>12/07/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>18/08/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>02/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>15/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>24/09/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>lorempsum@mail.com</td>
-                                        <td>26/04/2017</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Aceitar</button>
-                                            <button type="button" class="btn btn-danger">Cancelar</button>
-                                        </td>
-                                    </tr>
+                                {/foreach}
                                 </tbody>
                             </table>
                         </div>
@@ -206,5 +66,6 @@
                 $('#newUsers').dataTable();
             });
         </script>
+<script src="{$BASE_URL}js/requests/movements.js"></script>
 
 {include file='common/footer.tpl'}

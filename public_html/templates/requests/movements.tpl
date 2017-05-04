@@ -35,7 +35,6 @@
                             <table id="items" class="table table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Hora</th>
                                         <th>Item</th>
                                         <th>Utilizador</th>
 
@@ -43,142 +42,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                                {foreach $movements as $movement}
                                     <tr>
-                                    <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
+                                        <td><a href="{$BASE_URL}pages/inventory/model.php?id={$movement.id_modelo}">{$movement.nome}</a>
+                                        </td>
+                                        <td><a href="{$BASE_URL}pages/user/view_profile.php?id={$movement.id_utilizador}">{$movement.utilizador_nome}</a>
+                                        </td>
                                         <td>
                                             <button type="button" class="btn btn-primary">Acções</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                    <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14:20</td>
-                                        <td>Item 1</td>
-                                        <td>Lorem ipsum dolor</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Acções</button>
-                                        </td>
-                                    </tr>
+                                {/foreach}
+
                                 </tbody>
                             </table>
                         </div>

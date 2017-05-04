@@ -44,7 +44,7 @@
                             <h3>Resultados</h3>
                             <hr class="divider">
 							{foreach $modelsList as $model}
-							 <div class="col-lg-2">
+							 <div class="col-lg-2 pull-left">
                                 <a href="{$BASE_URL}/pages/inventory/model.php?id={$model.id_modelo}">
                                     <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
                                 </a>

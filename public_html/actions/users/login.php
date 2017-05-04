@@ -9,7 +9,7 @@
     exit;
   }
 
-  $email = $_POST['email'];
+  $email =strip_tags( $_POST['email']);
   $password = $_POST['password'];
 
   $userData=login($email, $password);

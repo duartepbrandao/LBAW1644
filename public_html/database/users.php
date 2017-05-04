@@ -53,5 +53,4 @@ function getUserRole($userID)
     }
     return $role;
     }
-
 ?>

@@ -68,8 +68,9 @@
                                     {foreach $reservations as $reservation}
                                         <tr>
                                             <td >
-                                                <a href="{$BASE_URL}pages/inventory/model.php?id={$reservation.id_modelo}">{$reservation.nome}</a>
+                                                <a href="{$BASE_URL}pages/inventory/model.php?id={$reservation.id_modelo}">{$reservation.nome_modelo}</a>
                                             </td>
+
                                             <td >
                                              {$reservation.data_inicio}
                                             </td>
