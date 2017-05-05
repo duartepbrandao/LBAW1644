@@ -7,12 +7,12 @@ background-color: #8c2c19;
 background-color: #8c2c19;
 }
 
-
-
 #sidebar,#navbar a {
 	color: white;
 }
-
+li:active>a, li>a:hover{
+	background-color: black !important;
+}
 body {
 	background-color: white;
 }
