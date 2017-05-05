@@ -79,12 +79,12 @@
                     {if $ROLE > 2}
                     <li {if $page eq "new-users"} class="active" {/if}>
                         <a href="{$BASE_URL}pages/admin/new-users.php" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Administrador <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse in">
+                        <ul id="demo" class="nav nav-second-level collapse in">
                             <li {if $page eq "categories"} class="active" {/if}>
                                 <a href="{$BASE_URL}pages/admin/categories.php">Categorias</a>
                             </li>
-                            <li {if $page eq "users"} class="active" {/if}>
-                                <a href="{$BASE_URL}pages/admin/users.php">Utilizadores</a>
+                            <li >
+                                <a href="{$BASE_URL}pages/admin/users.php" {if $page eq "users"} class="active" {/if}>Utilizadores</a>
                             </li>
                         </ul>
                     </li>

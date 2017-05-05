@@ -1,4 +1,25 @@
 <?php
+
+//add
+
+function addNewCategory($nomeCategoria, $idAdmin){
+    global $conn;
+    $conn->beginTransaction();
+    $stmt1 = $conn->prepare("INSERT INTO categoria (nome_categoria) VALUES (?);");
+    $result1 = $stmt1->execute(array($nomeCategoria));
+    if ($result1){
+        $stmt2 = $conn->prepare("INSERT INTO categoria_log (data,id_categoria, id_admin) VALUES (NOW(),lastval(),?);");
+        $result2 = $stmt2->execute(array($idAdmin));
+        if ($result2){
+            $conn->commit();
+        }else{
+            $conn->rollBack();
+        }
+    }
+    return ($result1 && $result2);
+}
+
+//GETS
   function getNewUsers() {
     global $conn;
     $stmt = $conn->prepare("SELECT utilizador.id_utilizador,
