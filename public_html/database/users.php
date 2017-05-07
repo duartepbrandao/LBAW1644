@@ -5,6 +5,7 @@ function createUser($realname, $email, $password)
     global $conn;
     $stmt = $conn->prepare("INSERT INTO utilizador (nome,email,password) VALUES (?, ?, ?)");
     $stmt->execute(array($realname, $email, sha1($password)));
+    return $conn->lastInsertId();
 }
 
 function login($email, $password)
@@ -12,7 +13,7 @@ function login($email, $password)
     global $conn;
     $stmt = $conn->prepare("SELECT id_utilizador, nome,email,foto,estatuto
                             FROM utilizador 
-                            WHERE email = ? AND password = ?");
+                            WHERE email = ? AND password = ? AND estatuto != 'novo_utilizador'::contas");
     $stmt->execute(array($email, sha1($password)));
 
     return $stmt->fetch();

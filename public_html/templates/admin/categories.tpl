@@ -34,10 +34,10 @@
                                 </thead>
                                 <tbody>
 								
-								 {foreach $categories as $categorie}
+								 {foreach $categories as $category}
 								
                                     <tr>
-                                        <td>{$categorie.nome_categoria}</td>
+                                        <td>{$category.nome_categoria}</td>
                                         <td></td>
                                         <td>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-manager-modal">

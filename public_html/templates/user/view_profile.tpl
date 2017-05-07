@@ -13,7 +13,7 @@
                             <hr class="divider">
 
                             <div class="col-lg-2">
-                                <img class="img-thumbnail" src="http://placehold.it/200x200" alt="">
+                                <img class="img-thumbnail" src="{$BASE_URL}images/users/{$user.foto}" alt="">
                             </div>
                             <div class="col-lg-6">
                                 <ul>

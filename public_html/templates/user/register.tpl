@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form action="{$BASE_URL}actions/users/register.php" method="post" role="form">
+                    <form enctype="multipart/form-data" action="{$BASE_URL}actions/users/register.php" method="post" role="form" >
                         <div class="form-group">
                             <label>Nome</label>
                             <input type="text" class="form-control" placeholder="" name="real_name">
@@ -50,6 +50,7 @@
                             <label>Email</label>
                             <input type="email" class="form-control" placeholder="example@domain" name="email">
                         </div>
+
                         <div class="form-group">
                             <label>Password</label>
                             <input type="password" class="form-control" name="password">
@@ -57,6 +58,12 @@
                         <div class="form-group">
                             <label>Confirm Password</label>
                             <input type="password" class="form-control" name="confirm_password">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Avatar
+                            </label>
+                            <input type="file" hidden class="btn btn-default btn-file" name="pic" id="pic" required="required">
                         </div>
                         <button type="submit" class="btn btn-default">Submeter</button>
                     </form>
