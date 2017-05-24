@@ -46,4 +46,10 @@ function addNewCategory($nomeCategoria, $idAdmin){
       return $stmt->fetchAll();
   }
 
+function deleteUser($userID){
+    global $conn;
+    $stmt = $conn->prepare("DELETE FROM utilizador WHERE id_utilizador = ? and estatuto = 'novo_utilizador'::contas RETURNING foto;");
+    $stmt->execute(array($userID));
+    return $stmt->fetchAll();
+}
 ?>

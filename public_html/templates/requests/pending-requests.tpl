@@ -66,6 +66,6 @@
                 $('#newUsers').dataTable();
             });
         </script>
-<script src="{$BASE_URL}js/requests/movements.js"></script>
+<script src="{$BASE_URL}js/requests/pending-requests.js"></script>
 
 {include file='common/footer.tpl'}
