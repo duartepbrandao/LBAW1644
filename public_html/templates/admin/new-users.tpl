@@ -34,12 +34,14 @@
 
                         {foreach $newUsers as $user}
                             <tr data-userid="{$user.id_utilizador}">
-                                <td> <a href="{$BASE_URL}/pages/user/view_profile.php?id={$user.id_utilizador}"</a>
+                                <td><a href="{$BASE_URL}/pages/user/view_profile.php?id={$user.id_utilizador}"</a>
                                     {$user.nome}</td>
                                 <td>{$user.email}</td>
 
                                 <td>
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#user-role-modal">Aceitar</button>
+                                    <button type="button" class="btn btn-success accept-user" data-toggle="modal"
+                                            data-target="#user-role-modal">Aceitar
+                                    </button>
                                     <button type="button" class="btn btn-danger reject-user">Cancelar</button>
                                 </td>
                             </tr>
@@ -58,24 +60,26 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" >
+                <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-plus"></span> Nova Categoria</h4>
                 </div>
-                <div class="modal-body" >
-                    <form role="form" action="{$BASE_URL}actions/admin/add-category.php" method="post">
+                <div class="modal-body">
+                    <form id="user-role-form" role="form" >
                         <div class="form-group">
                             <label for="sel1">Estatuto Utilizador:</label>
-                            <select class="form-control" id="sel1">
-                                <option>Aluno</option>
-                                <option>Professor</option>
-                                <option>Funcionário</option>
-                                <option>Operador</option>
-                                <option>Gestor</option>
-                                <option>Administrador</option>
+                            <select class="form-control" name="role" id="sel1">
+                                <option value="4">Aluno</option>
+                                <option value="5">Funcionário</option>
+                                <option value="6">Docente</option>
+                                <option value="1">Operador</option>
+                                <option value="2">Gestor</option>
+                                <option value="3">Administrador</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block set-role"><span class="glyphicon glyphicon-ok"></span> Adicionar</button>
+                        <button type="submit" class="btn btn-success btn-block set-role"><span
+                                    class="glyphicon glyphicon-ok"></span> Adicionar
+                        </button>
                     </form>
                 </div>
 

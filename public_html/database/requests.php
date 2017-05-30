@@ -69,11 +69,13 @@ function getPendingRequests()
     pedido.estado_pedido,
     pedido.data_fim,
     pedido.data_inicio,
-    pedido.id_pedido
+    pedido.id_pedido,
+    categoria.nome_categoria
    FROM pedido
      JOIN utilizador ON pedido.id_utilizador = utilizador.id_utilizador
      JOIN item ON pedido.id_item = item.id_item
      JOIN modelo ON item.id_modelo = modelo.id_modelo
+     JOIN categoria on modelo.id_categoria = categoria.id_categoria
      WHERE pedido.data_inicio >= CURRENT_DATE AND pedido.estado_pedido = 'aguardaResposta'::ESTADOPEDIDO;");
     $stmt->execute();
     return $stmt->fetchAll();

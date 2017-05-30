@@ -27,6 +27,7 @@
                                     <tr>
                                         <th>Item</th>
                                         <th>Utilizador</th>
+                                        <th>Categoria</th>
                                         <th>Data Inicio</th>
                                         <th>Data Fim</th>
                                         <th></th>
@@ -38,6 +39,7 @@
                                     <tr data-requestid="{$pending.id_pedido}" >
                                         <td><a href="{$BASE_URL}pages/inventory/model.php?id={$pending.id_item}">{$pending.nome}</td>
                                         <td><a href="{$BASE_URL}pages/user/view_profile.php?id={$pending.id_utilizador}">{$pending.utilizador_nome}</td>
+                                        <td><a href="{$BASE_URL}pages/user/view_profile.php?id={$pending.nome_categoria}">{$pending.utilizador_nome}</td>
                                         <td>{$pending.data_inicio}</td>
                                         <td>{$pending.data_fim}</td>
                                         <td>

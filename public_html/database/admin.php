@@ -52,4 +52,28 @@ function deleteUser($userID){
     $stmt->execute(array($userID));
     return $stmt->fetchAll();
 }
+
+function banUser($userID,$adminID,$dataFim,$motivo){
+    global $conn;
+    $conn->beginTransaction();
+    $stmt1 = $conn->prepare("INSERT INTO ban (data_fim, id_utilizador, id_admin) VALUES (?,?,?) RETURNING id_ban");
+    $result1 = $stmt1->execute(array($userID,$dataFim,$adminID));
+    $id = $stmt1->fetchAll();
+  if ($result1){
+      $stmt2 = $conn->prepare(" INSERT INTO ban_log (data, descricao, id_ban) VALUES (NOW(),?,?)");
+      $result2 = $stmt2->execute(array($motivo,$id));
+      if($result2)
+          $conn->commit();
+      else
+          $conn->rollBack();
+  }
+    return ($result1 && $result2);
+}
+
+function setUserRole ($userID, $newRole){
+    global $conn;
+    $stmt = $conn->prepare("UPDATE utilizador set estatuto=?::contas WHERE id_utilizador=?;");
+    $stmt->execute(array($newRole,$userID));
+
+}
 ?>

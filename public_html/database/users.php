@@ -54,4 +54,14 @@ function getUserRole($userID)
     }
     return $role;
     }
+
+function isBanned($userID){
+    global $conn;
+    $stmt = $conn->prepare("SELECT *
+                            FROM ban JOIN ban_log ON ban.id_ban = ban_log.id_ban
+                            WHERE id_utilizador = ? AND data_fim > now()");
+    $stmt->execute(array($userID));
+    return $stmt->fetch();
+
+}
 ?>

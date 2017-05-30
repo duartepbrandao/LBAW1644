@@ -1,11 +1,11 @@
 <?php
-  session_set_cookie_params(3600, '/~lbaw1644'); //FIXME
+  session_set_cookie_params(3600, '/~ei10060'); //FIXME
   session_start();
 
   error_reporting(E_ERROR | E_WARNING); // E_NOTICE by default
 
-  $BASE_DIR = '/opt/lbaw/lbaw1644/public_html/'; //FIXME
-  $BASE_URL = '/~lbaw1644/'; //FIXME
+  $BASE_DIR = '/usr/users2/mieic2010/ei10060/public_html/'; //FIXME
+  $BASE_URL = '/~ei10060/'; //FIXME
 
   $conn = new PDO('pgsql:host=dbm;dbname=lbaw1644', 'lbaw1644', 'dr25rs76'); //FIXME
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
