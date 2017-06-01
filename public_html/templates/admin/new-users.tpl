@@ -76,6 +76,7 @@
                                 <option value="2">Gestor</option>
                                 <option value="3">Administrador</option>
                             </select>
+                            <input type="hidden" name="userID" id="userID"/>
                         </div>
                         <button type="submit" class="btn btn-success btn-block set-role"><span
                                     class="glyphicon glyphicon-ok"></span> Adicionar

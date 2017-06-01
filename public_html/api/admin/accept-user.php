@@ -8,29 +8,46 @@ $role = $_POST['role'];
 
 switch ($role) {
     case 1:
-        setUserRole($userID, 'operador');
-        http_response_code(200);
+        if (addOperador($userID, 'operador')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     case 2:
-        setUserRole($userID, 'gestor');
-        http_response_code(200);
+        if (addGestor($userID, 'gestor')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     case 3:
-
-        setUserRole($userID, 'administrador');
-        http_response_code(200);
+        if (addAdmin($userID, 'administrador')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     case 4:
-        setUserRole($userID, 'aluno');
-        http_response_code(200);
+        if (setUserRole($userID, 'aluno')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     case 5:
-        setUserRole($userID, 'funcionário');
-        http_response_code(200);
+        if (setUserRole($userID, 'funcionário')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     case 6:
-        setUserRole($userID, 'docente');
-        http_response_code(200);
+        if (setUserRole($userID, 'docente')) {
+            http_response_code(200);
+        } else {
+            http_response_code(400);
+        }
         break;
     default:
         http_response_code(400);

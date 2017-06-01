@@ -15,24 +15,7 @@ if($_SESSION['role']<3){
 }
 
 $users=getUsers();
-foreach ($users as &$user){
-    $role = getUserRole($user["id_utilizador"]);
-    switch ($role){
-        case 0:
-            $user["role"]= "Utilizador";
-            break;
 
-        case 1:
-            $user["role"]= "Operador";
-            break;
-        case 2:
-            $user["role"]= "Gestor";
-            break;
-        case 3:
-            $user["role"]= "Administrador";
-            break;
-    }
-}
 $smarty->assign('users',$users);
 
 $smarty->assign('page', 'users');

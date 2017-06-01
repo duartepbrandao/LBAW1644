@@ -17,10 +17,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><b>Nome:</b> Diogo Luis Silva</li>
-                                    <li><b>ID:</b> 201405742</li>
-                                    <li><b>Estatuto:</b> Estudante</li>
-                                    <li><b>Email:</b> up201405742@fe.up.pt</li>
+                                    <li><b>Nome:</b> {$user.nome}</li>
+                                    <li><b>Estatuto:</b> {$user.estatuto}</li>
+                                    <li><b>Email:</b> {$user.email}</li>
                                 <ul>
                             </div>
                         </div>

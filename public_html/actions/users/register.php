@@ -58,7 +58,7 @@ try {
 
     move_uploaded_file($_FILES["pic"]["tmp_name"], $BASE_DIR."images/users/".$id.'.'.$imageFileType);
     chmod($BASE_DIR."images/users/".$id.'.'.$imageFileType, 0644);
-
+    setImage($id,$imageFileType);
 } catch (PDOException $e) {
 
     if (strpos($e->getMessage(), 'utilizador_email_key') !== false) {

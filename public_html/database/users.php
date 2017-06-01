@@ -62,6 +62,12 @@ function isBanned($userID){
                             WHERE id_utilizador = ? AND data_fim > now()");
     $stmt->execute(array($userID));
     return $stmt->fetch();
+}
 
+function setImage($id,$imageFileType){
+    global $conn;
+    $stmt = $conn->prepare("UPDATE utilizador SET foto=? WHERE id_utilizador=?;");
+    $stmt->execute(array($id.'.'.$imageFileType,$id));
+    return $stmt->fetch();
 }
 ?>
